@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Líneas | Librería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="inicio">
+    <header class="encabezado">
+        <a class="logo" href="#inicio" aria-label="Entre Líneas, inicio"><img src="img/logo-entre-lineas.png"
+                alt="Logotipo Entre Líneas Librería"></a>
+        <nav class="menu" aria-label="Navegación principal">
+            <ul>
+                <li><a class="active" href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a class="carrito" href="#catalogo" aria-label="Mi carrito" title="Mi carrito">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6" />
+                <circle cx="10" cy="20" r="1.3" />
+                <circle cx="18" cy="20" r="1.3" />
+            </svg>
+            <span class="texto-oculto">Mi carrito</span>
+        </a>
+    </header>
+    <main>
+        <section class="portada" aria-labelledby="hero-title">
+            <div class="texto-portada">
+                <p class="texto-destacado">LIBROS NUEVOS, USADOS Y EXTRAORDINARIOS</p>
+                <h1 id="hero-title">Hay historias<br><em>que te encuentran.</em></h1>
+                <p class="descripcion-portada">Nuevas lecturas, clásicos y ejemplares de
+                    colección. Buscalos, adquirilos, compartilos. ¡Te están esperando!</p>
+                <a class="boton boton-principal" href="#catalogo">Explorar catálogo</a>
+            </div>
+        </section>
+        <section class="aviso" id="servicios">
+            <h4>[SERVICIOS] - en construcción -</h4>
+        </section>
+        <section class="aviso" id="catalogo">
+            <h4>[CATÁLOGO] - en construcción -</h4>
+        </section>
+        <section class="aviso" id="resenas">
+            <h4>[RESEÑAS] - en construcción -</h4>
+        </section>
+        <section class="seccion-contacto" id="contacto">
+            <div class="texto-contacto">
+                <p class="texto-destacado">HABLEMOS DE LIBROS</p>
+                <h2>¿Buscás un título o querés ofrecer uno?</h2>
+                <p>Escribinos por disponibilidad, alquileres, permutas, venta de ejemplares o evaluación de piezas de
+                    colección.</p>
+                <ul class="opciones-contacto">
+                    <li>Consultas de catálogo</li>
+                    <li>Oferta de libros usados</li>
+                    <li>Manuscritos y rarezas</li>
+                </ul>
+            </div>
+            <form class="formulario" action="https://formspree.io/f/xyekpolp" method="POST">
+                <div class="campo"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre"
+                        placeholder="Tu nombre" required></div>
+                <div class="campo"><label for="email">Correo electrónico</label><input type="email" id="email"
+                        name="email" placeholder="tu@email.com" required></div>
+                <div class="campo ancho-completo"><label for="motivo">¿En qué podemos ayudarte?</label><select
+                        id="motivo" name="motivo" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option value="compra">Comprar un libro</option>
+                        <option value="venta">Vender libros</option>
+                        <option value="alquiler">Alquilar un libro</option>
+                        <option value="permuta">Proponer una permuta</option>
+                        <option value="coleccion">Manuscritos o rarezas</option>
+                        <option value="otro">Otra consulta</option>
+                    </select></div>
+                <div class="campo ancho-completo"><label for="mensaje">Mensaje</label><textarea id="mensaje"
+                        name="mensaje" rows="6" placeholder="Contanos qué libro buscás..." required></textarea></div>
+                <button class="boton boton-principal boton-enviar" type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+    <footer class="pie" id="footer">
+        <div class="marca-pie"><a class="nombre-pie" href="#inicio">Entre Líneas</a>
+            <p>Tienda de libros.</p>
+        </div>
+        <div class="enlaces-pie">
+            <h3>Explorá</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="contacto-pie">
+            <h3>Contacto</h3>
+            <p>info@entrelineas.com</p>
+            <p>Buenos Aires, Argentina</p>
+        </div>
+        <div class="final-pie">
+            <p>Todos los derechos reservados © 2026 Entre Líneas</p>
+        </div>
+    </footer>
+</body>
+
+</html>
